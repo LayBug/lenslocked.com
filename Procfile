@@ -1,1 +1,1 @@
-web: lenslocked.com
+web: bin/lenslocked.com
