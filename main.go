@@ -41,5 +41,5 @@ func main() {
 	r.HandleFunc("/", home)
 	r.HandleFunc("/contact", contact)
 	r.HandleFunc("/faq", faq)
-	http.ListenAndServe("0.0.0.0:3000", r)
+	http.ListenAndServe("127.0.0.1:8080", r)
 }
