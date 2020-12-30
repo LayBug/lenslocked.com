@@ -13,3 +13,6 @@ naries for programs and plugins
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+exp/hello.gohtml
+exp
