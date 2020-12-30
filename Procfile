@@ -1,1 +1,1 @@
-web: bin/lenslocked
+web: main
