@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/charleyvibez/lenslocked.com/views"
 	"net/http"
+        "os"
 
 	"github.com/gorilla/mux"
 )
@@ -41,5 +42,6 @@ func main() {
 	r.HandleFunc("/", home)
 	r.HandleFunc("/contact", contact)
 	r.HandleFunc("/faq", faq)
-	http.ListenAndServe("0.0.0.0:8080", r)
+        port := os.Getenv("PORT")
+	http.ListenAndServe("0.0.0.0:" + port, r)
 }
